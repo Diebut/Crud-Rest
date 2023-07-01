@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Diebut/Crud-Rest/issues"
   },
-  "homepage": "https://github.com/Diebut/Crud-Rest#readme"
+  "homepage": "https://github.com/Diebut/Crud-Rest#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
 }
