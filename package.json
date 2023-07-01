@@ -1,0 +1,20 @@
+{
+  "name": "Crud-Rest",
+  "version": "1.0.0",
+  "description": "---\r * pasos de seguimiento\r     * crear\r     * leer\r     * actualizar\r     * eliminar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diebut/Crud-Rest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diebut/Crud-Rest/issues"
+  },
+  "homepage": "https://github.com/Diebut/Crud-Rest#readme"
+}
