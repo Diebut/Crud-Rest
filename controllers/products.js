@@ -1,13 +1,13 @@
-const { products } = require('../db.json');
+const { usuarios } = require('../db.json');
 
 module.exports = {
 
-    getProducts:(req, res) => {
-        res.json({products})  //products: products})
+    getUsuarios:(req, res) => {
+        res.json({usuarios})  //products: products})
     },
 
     
-    addProducts: (req, res) => {
+    addUsuarios: (req, res) => {
         //const products = req.body.name;
         const {name} = req.body;
         products.push({

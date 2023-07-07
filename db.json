@@ -1,12 +1,14 @@
 {
-    "products":[
+    "Usuarios":[
         {
-            "id":0,
-            "name": "laptop"
+            "nombre": "camila",
+            "correo": "cami@carreras.com",
+            "id":0
         },
         {
-            "id":1,
-            "name": "pc"
+            "nombre": "dieguito",
+            "correo": "diegol333@com.ar",
+            "id":1
         }
     ]
 }

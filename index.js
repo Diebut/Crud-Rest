@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 
-const productsRoutes = require('./routes/products');
+const usuariosRoutes = require('./routes/usuarios');
 
 //settings
 app.set('json spaces', 4);
@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 //Routes
-app.use('/products', productsRoutes);
+app.use('/usuarios', usuariosRoutes);
 
 
 //Static files
