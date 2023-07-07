@@ -10,13 +10,14 @@ module.exports = {
     addUsuarios: (req, res) => {
         //const products = req.body.name;
         const {nombre} = req.body;
-        products.push({
+        const {correo} = req.body;
+        usuarios.push({
             nombre, correo,
-            id: products.length
+            id: usuarios.length
         })
         res.json({
             'success':true,
-            'msg': 'successfully added'
+            'msg': 'agregado :D'
         });
     },
 
@@ -27,13 +28,14 @@ module.exports = {
 
        usuarios.forEach((usuarios, i) => {
             if (usuarios.id === Number(id)) {
-                usuarios.name = name;
+                usuarios.name = nombre,
+                usuarios.correo = correo;
             }
 
        });
        res.json({
             'success':true,
-            'msg': 'update'
+            'msg': 'modificado'
        })
 
     },
@@ -47,7 +49,7 @@ module.exports = {
         });
         res.json({
             'success':true,
-            'msg': 'delete'
+            'msg': 'eliminado'
        })
 
     }
