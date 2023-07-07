@@ -9,9 +9,9 @@ module.exports = {
     
     addUsuarios: (req, res) => {
         //const products = req.body.name;
-        const {name} = req.body;
+        const {nombre} = req.body;
         products.push({
-            name,
+            nombre, correo,
             id: products.length
         })
         res.json({
@@ -20,13 +20,14 @@ module.exports = {
         });
     },
 
-    updateProducts:(req, res)=>{
+    updateUsuarios:(req, res)=>{
        const { id } = req.params;
-       const { name } = req.body;
+       const { nombre } = req.body;
+       const { correo } = req.body;
 
-       products.forEach((products, i) => {
-            if (products.id === Number(id)) {
-                products.name = name;
+       usuarios.forEach((usuarios, i) => {
+            if (usuarios.id === Number(id)) {
+                usuarios.name = name;
             }
 
        });
@@ -37,11 +38,11 @@ module.exports = {
 
     },
 
-    deleteProducts:(req, res)=>{
+    deleteUsuarios:(req, res)=>{
         const {id} = req.params;
-        products.forEach((product, i)=>{
-            if (product.id === Number(id)) {
-                products.splice(i, 1);
+        usuarios.forEach((usuario, i)=>{
+            if (usuario.id === Number(id)) {
+                usuario.splice(i, 1);
             }
         });
         res.json({
