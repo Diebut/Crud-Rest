@@ -5,6 +5,8 @@ module.exports = {
     getProducts:(req, res) => {
         res.json({products})  //products: products})
     },
+
+    
     addProducts: (req, res) => {
         //const products = req.body.name;
         const {name} = req.body;
