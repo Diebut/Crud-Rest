@@ -44,7 +44,7 @@ module.exports = {
         const {id} = req.params;
         usuarios.forEach((usuario, i)=>{
             if (usuario.id === Number(id)) {
-                usuario.splice(i, 1);
+                usuarios.splice(i, 1);
             }
         });
         res.json({

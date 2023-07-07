@@ -1,4 +1,4 @@
-const morgan = require('morgan');
+const morgan = require('morgan'); // para mostrar por consola los get-put-delete-update
 const bodyParser = require('body-parser');
 
 const express = require('express');
