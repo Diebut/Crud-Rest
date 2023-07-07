@@ -3,12 +3,12 @@ const { usuarios } = require('../db.json');
 module.exports = {
 
     getUsuarios:(req, res) => {
-        res.json({usuarios})  //products: products})
+        res.json({usuarios})  //usuarios: usuarios})
     },
 
     
     addUsuarios: (req, res) => {
-        //const products = req.body.name;
+        //const usuarios = req.body.nombre;
         const {nombre} = req.body;
         const {correo} = req.body;
         usuarios.push({
