@@ -26,10 +26,10 @@ module.exports = {
        const { nombre } = req.body;
        const { correo } = req.body;
 
-       usuarios.forEach((usuarios, i) => {
-            if (usuarios.id === Number(id)) {
-                usuarios.name = nombre,
-                usuarios.correo = correo;
+       usuarios.forEach((usuario, i) => {
+            if (usuario.id === Number(id)) {
+                usuario.name = nombre,
+                usuario.correo = correo;
             }
 
        });
