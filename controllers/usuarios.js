@@ -28,7 +28,7 @@ module.exports = {
 
        usuarios.forEach((usuario, i) => {
             if (usuario.id === Number(id)) {
-                usuario.name = nombre,
+                usuario.nombre = nombre,
                 usuario.correo = correo;
             }
 
