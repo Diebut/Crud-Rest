@@ -1,14 +1,14 @@
 {
-    "Usuarios":[
-        {
+    "usuarios":[
+        {   
+            "id":0,
             "nombre": "camila",
-            "correo": "cami@carreras.com",
-            "id":0
+            "correo": "cami@carreras.com"
         },
         {
+            "id":1,
             "nombre": "dieguito",
-            "correo": "diegol333@com.ar",
-            "id":1
+            "correo": "diegol333@com.ar"
         }
     ]
 }
